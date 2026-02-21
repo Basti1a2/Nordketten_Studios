@@ -540,3 +540,23 @@ footer {
     justify-content: center;
 }
 
+/* Icons innerhalb der Team-Karten */
+.talent-socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Dezente Trennlinie */
+    padding-top: 15px;
+}
+
+.talent-socials a {
+    color: #666; /* Erstmal dezent grau */
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.talent-socials a:hover {
+    color: var(--accent); /* Dein Studio-Blau beim Drüberfahren */
+    transform: translateY(-3px);
+}
