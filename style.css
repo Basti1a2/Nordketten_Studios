@@ -560,3 +560,50 @@ footer {
     color: var(--accent); /* Dein Studio-Blau beim Drüberfahren */
     transform: translateY(-3px);
 }
+
+/* --- MOBILE NAVIGATION --- */
+
+/* Standardmäßig ist das Icon auf dem PC unsichtbar */
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Auf dem Handy wird es sichtbar */
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Menü ist am Anfang rechts außerhalb des Bildschirms */
+        height: 100vh;
+        width: 70%; /* Nimmt 70% der Breite ein */
+        background: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(15px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        transition: 0.4s ease-in-out;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    /* Wenn das Menü aktiv ist, schiebt es sich rein */
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li a {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+}
