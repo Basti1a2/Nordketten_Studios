@@ -607,3 +607,18 @@ footer {
         letter-spacing: 2px;
     }
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none; /* Verhindert, dass der Text unterstrichen wird */
+    cursor: pointer; /* Zeigt die Klick-Hand an */
+}
+
+.logo span {
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    color: #fff; /* Sorgt dafür, dass der Text weiß bleibt und nicht blau wird */
+}
