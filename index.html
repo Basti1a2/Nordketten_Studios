@@ -3,45 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nordketten Studios - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Nordketten Studios</title>
+
+    <link rel="stylesheet" href="/style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-    <nav class="hotbar">
-        <a href="index.html" class="logo">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/mountain.png" alt="Logo">
-            <span>NORDKETTEN STUDIOS</span>
-        </a>
-        
-        <div class="menu-icon" id="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
+<header>
+    <nav class="glass-nav">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <div class="bg-img">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/mountain.png">
+                </div>
+                <span>NORDKETTEN STUDIOS</span>
+            </a>
 
-        <ul class="nav-links" id="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="movies.html">Filme</a></li>
-            <li><a href="mitwirkende.html">Team</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
+            <div class="menu-icon" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="movies.html">Filme</a></li>
+                <li><a href="mitwirkende.html">Team</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
     </nav>
 
-        <div class="hero">
-            <div class="hero-content">
-                <h1>Nordketten Studios</h1>
-                <p>Erzählen. Erleben. Erschaffen.</p>
-                <a href="filme.html" class="btn">Unsere Filme entdecken</a>
-            </div>
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1>Nordketten Studios</h1>
+            <p>Erzählen. Erleben. Erschaffen.</p>
+            <a href="movies.html" class="btn-primary">Unsere Filme entdecken</a>
         </div>
-    </header>
+    </div>
+</header>
 
 <main class="container">
-    <section id="ueber-uns" class="reveal">
-        <div class="center-content">
+
+    <section id="ueber-uns" class="reveal glass-section">
+        <div class="glass-card">
             <span class="eyebrow">Wer wir sind</span>
             <h2>Willkommen bei Nordketten Studios</h2>
             <div class="text-columns">
@@ -51,53 +58,50 @@
         </div>
     </section>
 
-<section id="panorama" class="reveal">
-    <div class="panorama-wrapper">
-        <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=2076" alt="Nordkette">
-        <div class="panorama-overlay">
-            <div class="overlay-text">
-                <h2>Die Nordkette</h2>
-                <p>Unsere Heimat. Unsere Inspiration.</p>
+    <section id="panorama" class="reveal">
+        <div class="panorama-wrapper glass-frame">
+            <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&w=2076" alt="Nordkette">
+            <div class="panorama-overlay">
+                <div class="overlay-text">
+                    <h2>Die Nordkette</h2>
+                    <p>Unsere Heimat. Unsere Inspiration.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+
         <div class="center-content description">
             <p>Die atemberaubende Landschaft ist eine unerschöpfliche Quelle für unsere visuellen Welten. Ihre majestätischen Gipfel spiegeln sich in der Tiefe unserer Filme wider.</p>
         </div>
     </section>
 
-    <section id="aktuelles" class="reveal">
-        <div class="next-project-card">
+    <section id="aktuelles" class="reveal glass-section">
+        <div class="glass-card">
             <span class="tag">In Produktion</span>
             <h2>Was kommt als Nächstes?</h2>
             <h3 class="coming-soon">Etwas Großes braut sich zusammen...</h3>
             <p>Bleiben Sie dran für Updates zu unserem neuesten Projekt! Wir können es kaum erwarten, es Ihnen zu zeigen.</p>
-            <div class="action-area">
-                <a href="filme.html" class="btn">Portfolio ansehen</a>
-            </div>
+            <a href="movies.html" class="btn-secondary">Portfolio ansehen</a>
         </div>
     </section>
+
 </main>
 
-    <footer id="kontakt">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="https://img.icons8.com/ios-filled/50/ffffff/mountain.png" alt="Logo">
-                <span>Nordketten Studios</span>
-            </div>
-            <div class="social-links">
-                <a href="https://www.instagram.com/nordkettenstudios/" class="social-card"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-card"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="social-card"><i class="fab fa-tiktok"></i></a>
-                <a href="#" class="social-card"><i class="fab fa-discord"></i></a>
-            </div>
-            <div class="footer-info">
-                <p>&copy; 2026 Nordketten Studios. Alle Rechte vorbehalten.</p>
-            </div>
+<footer id="kontakt" class="footer-glass">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/mountain.png">
+            <span>Nordketten Studios</span>
         </div>
-    </footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+        <p>© 2026 Nordketten Studios</p>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<script src="/script/script.js"></script>
 </body>
 </html>
